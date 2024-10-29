@@ -138,14 +138,20 @@ h1 {
   line-height: 1.2;
   font-weight: bold;
   letter-spacing: -0.03em;
+  margin-bottom: 0.7em;
+}
+
+h1 span {
+  display: inline-block;
   position: relative;
   z-index: 1;
 }
 
-h1+img {
-  position: relative;
-  width: 84%;
-  bottom: 12px;
+span>img {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -15px;
 }
 
 p,
@@ -157,7 +163,7 @@ blockquote {
   margin-bottom: 1.2em;
 }
 
-h1+img+p {
+h1+p {
   color: #a0a0a0;
 }
 
